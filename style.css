@@ -83,6 +83,16 @@ img.background {
     margin-bottom: 1rem;
 }
 
+input {
+    border: 1px solid #c0c2c4;
+    border-radius: 4px;
+}
+
+input:focus {
+    border: 1px solid blue;
+    box-shadow: 0 4px 4px -4px gray;
+}
+
 .right .bottomContainer {
     margin-top: 2rem;  
 }
