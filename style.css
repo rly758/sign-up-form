@@ -135,6 +135,7 @@ input {
 button.signUp {
     background-color: #596D48;
     color: white;
+    border: none;
     border-radius: 12px;
     font-size: 1.2rem;
     height: 3rem;
