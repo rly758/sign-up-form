@@ -11,17 +11,73 @@ body {
 
 .left {
     position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: auto ;
+    align-items: center;
 }
 
 .left .logoBackground {
     position: absolute;
-    left: 0%;
-    top: 0;
-    background-color: grey;
+    top: 30%;
+    display: flex;
+    align-items: center;
+    height: 20vh;
+    background: rgba(0,0,0,0.65);
+    color: white;
+    font-size: 3rem;
+}
+
+.left .logo {
+    height: 80%;
+}
+
+.left .credit {
+    position: absolute;
+    bottom: 0;
+    color: white;
+    font-size: 0.8rem;
+}
+
+a {
+    color: white;
+}
+
+.logoBackground {
+    display: flex;
+    justify-content: center;
+    width: 100%;
 }
 
 img.background {
     height: 100vh;
+}
+
+.right {
+    padding: 2vw;
+    font-size: 1.5rem;
+}
+
+.right .topContainer {
+    --topContainerHeight: 35vh;
+    height: var(--topContainerHeight);
+    max-height: var(--topContainerHeight);
+    overflow: auto;
+}
+
+.right .middleContainer {
+    --middleContainerHeight: 30vh;
+    height: var(--middleContainerHeight);
+    box-shadow: 1px 1px 3px grey;
+}
+
+.right .bottomContainer {
+    height: 100vh - var(var(--topContainerHeight)) - var(--middleContainerHeight);
+}
+
+.hero {
+    margin-right: 10vw;
 }
 
 .inputLabelPair {
@@ -31,6 +87,7 @@ img.background {
 
 label {
     order: 1;
+    font-size: .8rem;
 }
 
 input {
@@ -40,6 +97,6 @@ input {
 .formList {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    width: 25rem;
+    gap: 1vw;
+    max-width: 30vw;
 }
