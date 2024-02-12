@@ -89,7 +89,7 @@ input {
 }
 
 input:focus {
-    border: 1px solid blue;
+    outline-color: #2567d9;
     box-shadow: 0 4px 4px -4px gray;
 }
 
@@ -139,4 +139,14 @@ button.signUp {
     font-size: 1.2rem;
     height: 3rem;
     width: 16rem;
+}
+
+input.error {
+    outline-color: red;
+    border-color: red;
+}
+
+#errorText {
+    color: red;
+    order: 3;
 }
